@@ -6,7 +6,6 @@ module.exports = validateProfileInuput = (data) => {
     data.handle = !isEmpty(data.handle) ? data.handle : '';
     data.status = !isEmpty(data.status) ? data.status : '';
     data.skills = !isEmpty(data.skills) ? data.skills : '';
-    console.log(data)
 
     if (!validator.isLength(data.handle, {min: 2, max: 40})) {
         errors.handle = 'Handle should be between 2 and 40 characters';

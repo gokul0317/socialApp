@@ -64,7 +64,7 @@ const ProfileSchema = new Schema({
 
         }
     ],
-    experience: [
+    education: [
         {
             school: {
                 type: String,
@@ -117,4 +117,4 @@ const ProfileSchema = new Schema({
     }
 });
 
-module.exports = profile = mongoose.model('profile', ProfileSchema);
+module.exports = Profile = mongoose.model('profile', ProfileSchema);
